@@ -1,0 +1,42 @@
+{
+  "Inter": [
+    "Sommer", "Bisseck", "Akanji", "Bastoni", "Dumfries", "Carlos Augusto",
+    "Barella", "Mkhitaryan", "Sucic", "Dimarco",
+    "Lautaro Martinez", "Thuram", "Bonny", "F.P.Esposito"
+  ],
+  "Napoli": [
+    "Milinkovic-Savic", "Di Lorenzo", "Rrahmani", "Buongiorno", "Beukema", "Juan Jesus",
+    "Anguissa", "Lobotka", "McTominay", "De Bruyne", "Hojlund",
+    "Politano", "Alisson Santos", "Giovane"
+  ],
+  "Milan": [
+    "Maignan", "Pavlovic", "Tomori", "De Winter", "Gabbia", "Estupinan",
+    "Rabiot", "Saelemakers", "Pulisic", "Fofana","Jashari", "Leao",
+    "Nkunku", "Fullkrug"
+  ],
+  "Juventus": [
+    "Di Gregorio", "Kalulu", "Bremer", "Kelly", "Cambiaso", "McKennie",
+    "Locatelli", "Thuram M.","Koopmeiners", "Conceicao",
+    "David","Vlahovic", "Yildiz", "Boga"
+  ],
+  "Roma": [
+    "Svilar", "Celik", "Mancini", "Ndicka", "Wesley", "Hermoso",
+    "Soulè", "Pellegrini", "Cristante", "Pisilli", "El Shaarawy",
+    "Malen", "Dybala", "Vaz"
+  ],
+  "Como": [
+    "Butez", "Smolcic", "J.Ramon", "Diego Carlos", "Gomez A.", "Perrone",
+    "Da Cunha", "Sergi Roberto", "Diao", "Nico Paz", "J.Rodriguez", 
+    "Baturina", "Douvikas", "Morata"
+  ],
+  "Atalanta": [
+    "Carnesecchi", "Zappacosta", "Djimsiti", "Scalvini", "Kolasinac", "Bellanova",
+    "de Roon", "Zalewski", "Ederson", "Pasalic", "Krstovic", "De Ketelaere",
+    "Scamacca", "Raspadori"
+  ],
+  "Lazio": [
+    "Motta E.", "Lazzari", "Gila", "Romagnoli", "Nuno Tavares", "Marusic",
+    "Basic", "Taylor", "Dele-Bashiru", "Isaksen", "Zaccagni", "Maldini",
+    "Cancellieri", "Noslin"
+  ]
+}
