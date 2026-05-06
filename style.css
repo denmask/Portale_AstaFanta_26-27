@@ -76,12 +76,39 @@ h1 {
   text-transform: uppercase;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .header-meta {
   font-size: 12px;
   background: rgba(255,255,255,.15);
   padding: 5px 10px;
   border-radius: 20px;
   font-weight: 500;
+}
+
+/* ── Bottone Admin nell'header ── */
+.btn-admin-header {
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  background: rgba(255,255,255,.18);
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,.35);
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+  white-space: nowrap;
+}
+
+.btn-admin-header:hover {
+  background: rgba(255,255,255,.3);
+  border-color: rgba(255,255,255,.6);
 }
 
 main {
@@ -404,6 +431,7 @@ select:focus {
   font-size: 12px;
 }
 
+/* ── Modali ── */
 .modal {
   position: fixed;
   inset: 0;
@@ -466,6 +494,101 @@ select:focus {
 .btn-save { background: var(--green); color: white; }
 .btn-save:hover { background: var(--green-dark); }
 
+/* ── Modal Admin (più largo) ── */
+.modal-box-admin {
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.admin-header {
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--gray-100);
+}
+
+.admin-header h3 {
+  margin-bottom: 4px;
+}
+
+.admin-sub {
+  font-size: 12px;
+  color: var(--gray-600);
+  margin-top: 4px;
+}
+
+/* ── Griglia abbinamenti Admin ── */
+.admin-assegnazioni-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.admin-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  transition: border-color .15s;
+}
+
+.admin-row:hover {
+  border-color: var(--green);
+}
+
+.admin-fanta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-fascia-badge {
+  font-size: 10px;
+  font-weight: 700;
+  background: var(--green);
+  color: white;
+  padding: 2px 7px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.admin-fanta-nome {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-club-select {
+  width: 160px;
+  flex-shrink: 0;
+  padding: 8px 30px 8px 10px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  appearance: none;
+  background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%231a7a3c'/%3E%3C/svg%3E") no-repeat right 10px center;
+  color: var(--black);
+  cursor: pointer;
+  transition: border-color .2s;
+}
+
+.admin-club-select:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+/* ── Utility ── */
 .hidden { display: none !important; }
 
 .toast {
@@ -485,7 +608,10 @@ select:focus {
 }
 
 .toast.show { transform: translateX(-50%) translateY(0); }
+.toast.toast-ok { background: var(--green-dark); }
+.toast.toast-err { background: var(--red); }
 
+/* ── Responsive ── */
 @media (max-width: 600px) {
   .add-form {
     grid-template-columns: 1fr 1fr;
@@ -499,4 +625,15 @@ select:focus {
   .player-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
 
   h1 { font-size: 18px; }
+
+  .admin-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .admin-club-select {
+    width: 100%;
+  }
+
+  .btn-admin-header span { display: none; }
 }
